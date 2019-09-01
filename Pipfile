@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+numpy = "*"
+opencv-contrib-python = "==4.1.0.25"
+pygal = "*"
+openpyxl = "*"
+robobrowser = "*"
+tweepy = "*"
+face-recognition = "*"
+pandas = "*"
+pymongo = "*"
+
+[requires]
+python_version = "3.6"

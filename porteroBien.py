@@ -1,14 +1,10 @@
-# Buscar --rev para ir comentando lo que no se que hace
-
 import face_recognition
 from cv2 import cv2
 import numpy as np
 
-#AGREGADO POR JUAN
 import glob
 import os
 
-#Agregado por nico
 import sys
 import time
 
@@ -244,9 +240,6 @@ while True:
             flagCaptura= not flagCaptura
         else:
             cv2.putText(frame, 'Para realizar una carga solo debe aparecer una persona en el video', (50, 50), font, 0.8, (0, 0, 0), 2)
-
-    #else:
-        #flagCaptura= not flagCaptura	
             
     elif k== ord('q'):
         break
@@ -258,10 +251,3 @@ while True:
 # Release handle to the webcam
 video_capture.release()
 cv2.destroyAllWindows()
-
-'''
-try:
-    print(face_locations[0][2].__name__,face_locations[0][3].__name__)
-except:
-    pass
-'''

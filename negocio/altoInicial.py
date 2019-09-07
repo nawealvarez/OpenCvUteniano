@@ -5,9 +5,9 @@ import face_recognition
 from cv2 import cv2
 import glob
 import os
+from datos.alumnos import AlumnoData
 
-
-img_O = cv2.imread('img/Fabri.jpg')   # reads an image in the BGR format
+'''img_O = cv2.imread('img/Fabri.jpg')   # reads an image in the BGR format
 img_O = cv2.cvtColor(img_O, cv2.COLOR_BGR2RGB)   # BGR -> RGB
 img_L = cv2.imread('img/nico.jpg')   # reads an image in the BGR format
 img_L = cv2.cvtColor(img_L, cv2.COLOR_BGR2RGB)
@@ -16,6 +16,7 @@ b = {'nombre': 'Barack', 'apellido': 'Obama', 'dni': '789456132'}
 #print('Obama:\n ',len(img_O), '\n','Lucho:\n ', len(img_L))
 # Convert numpy array to Binary
 b['imagen'] = Binary(pickle.dumps(img_L, protocol=2), subtype=128)
+'''
 contador = 0
 listadoImagenes = glob.glob("img/*.*")
 known_face_encodings = []

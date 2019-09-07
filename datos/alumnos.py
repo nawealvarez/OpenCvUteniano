@@ -2,7 +2,7 @@ from bson.binary import Binary
 import pickle
 from cv2 import cv2
 import pymongo
-from connection import Connection
+from datos.connection import Connection
 import face_recognition
 from cv2 import cv2
 import numpy as np

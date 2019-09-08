@@ -11,6 +11,6 @@ for i in lista_alumnos:
     imagen = pickle.loads(i["imagen"])
     i.update((k, imagen) for k, v in i.items() if k == "imagen")
 for document in lista_alumnos:
-    print(document["nombre"], "imagen: ", document["imagen"])
+    print("Nombre: ", document["nombre"], "imagen: ", document["imagen"])
 
 print(type(lista_alumnos))
